@@ -8411,3 +8411,76 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001890 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/theaborg/Desktop/3Dgame/game/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/theaborg/Desktop/3Dgame/game/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.998 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3000ms)
+		BeginReloadAssembly (479ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (60ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (157ms)
+		EndReloadAssembly (2237ms)
+			LoadAssemblies (213ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (402ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (1364ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (41ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (1055ms)
+				ProcessInitializeOnLoadMethodAttributes (140ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Callback registration failed. Increase kMaxCallback.
+Fatal Error! Callback registration failed. Increase kMaxCallback.
+Obtained 30 stack frames.
+#0  0x007fff2034792e in __pthread_kill
+#1  0x007fff202cb406 in abort
+#2  0x00000104bc842e in CrashDontLaunchBugReporter()
+#3  0x000001037f90fe in EditorMonoConsole::LogToConsoleImplementation(CppLogEntry&)
+#4  0x000001037f8706 in EditorMonoConsole::LogToConsoleImplementation(DebugStringToFileData const&)
+#5  0x000001037f9d1e in LogToConsoleImplementation(DebugStringToFileData const&)
+#6  0x000001045ac038 in DebugStringToFilePostprocessedStacktrace(DebugStringToFileData const&)
+#7  0x000001045ac830 in DebugStringToFile(DebugStringToFileData const&)
+#8  0x000001031a72c7 in CallbackArrayBase<void (*)(BuildTargetPlatform), void (*)(void const*, BuildTargetPlatform)>::Register(void (*)(BuildTargetPlatform), void (*)(void const*, BuildTargetPlatform), void const*)
+#9  0x000001038db6a2 in LoadDomainAndUserAssemblies()
+#10 0x000001038dd7f0 in LoadUserAssemblies()
+#11 0x000001041d6df3 in AssetImportWorkerClient::ReloadMonoDomain(AssetResolver&)
+#12 0x000001041e7143 in invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_4::operator()() const
+#13 0x007fff201cc806 in _dispatch_client_callout
+#14 0x007fff201d968d in _dispatch_async_and_wait_invoke
+#15 0x007fff201cc806 in _dispatch_client_callout
+#16 0x007fff201d8b4f in _dispatch_main_queue_callback_4CF
+#17 0x007fff204aaf1e in __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+#18 0x007fff2046cf18 in __CFRunLoopRun
+#19 0x007fff2046bd80 in CFRunLoopRunSpecific
+#20 0x007fff28917a83 in RunCurrentEventLoopInMode
+#21 0x007fff289177e5 in ReceiveNextEventCommon
+#22 0x007fff28917583 in _BlockUntilNextEventMatchingListInModeWithFilter
+#23 0x007fff22b9ed72 in _DPSNextEvent
+#24 0x007fff22b9d545 in -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+#25 0x007fff22b8f869 in -[NSApplication run]
+#26 0x007fff22b63a6c in NSApplicationMain
+#27 0x00000104bd8f05 in EditorMain(int, char const**)
+#28 0x00000104bd9229 in main
+#29 0x007fff20391f3d in start

@@ -436,7 +436,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: d1fd41beb70267947bc1c996df07593d, type: 3}
       propertyPath: m_Name
-      value: Sphere
+      value: RR slow rock
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d1fd41beb70267947bc1c996df07593d, type: 3}
       propertyPath: m_RootOrder
@@ -1055,9 +1055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"collision
-      stop","value":{"$content":1,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!1 &2024098054
 GameObject:

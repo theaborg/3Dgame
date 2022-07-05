@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 455995b8866658b42b3da7b1cab18535, type: 3}
       propertyPath: m_Name
-      value: left roll rock
+      value: LR slow rock
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 455995b8866658b42b3da7b1cab18535, type: 3}
       propertyPath: m_RootOrder
@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 455995b8866658b42b3da7b1cab18535, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.33
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 455995b8866658b42b3da7b1cab18535, type: 3}
       propertyPath: m_LocalPosition.z
@@ -152,11 +152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 455995b8866658b42b3da7b1cab18535, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 455995b8866658b42b3da7b1cab18535, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 455995b8866658b42b3da7b1cab18535, type: 3}
       propertyPath: m_LocalRotation.y
@@ -168,7 +168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 455995b8866658b42b3da7b1cab18535, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 455995b8866658b42b3da7b1cab18535, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -692,8 +692,10 @@ GameObject:
   - component: {fileID: 1097070675}
   - component: {fileID: 1097070674}
   - component: {fileID: 1097070673}
+  - component: {fileID: 1097070678}
+  - component: {fileID: 1097070677}
   m_Layer: 0
-  m_Name: StartArea (1)
+  m_Name: MiddleArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -778,6 +780,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1097070677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097070672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 1629eda66fa9c4d3ea1cd8c048a62ef4, type: 2}
+--- !u!114 &1097070678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097070672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1 &1107064418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,9 +1349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"collision
-      stop","value":{"$content":1,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!64 &1836828630
 MeshCollider:
@@ -1539,7 +1570,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: d1fd41beb70267947bc1c996df07593d, type: 3}
       propertyPath: m_Name
-      value: right roll rock
+      value: RR slow rock
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d1fd41beb70267947bc1c996df07593d, type: 3}
       propertyPath: m_RootOrder
